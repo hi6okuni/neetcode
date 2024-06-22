@@ -4,6 +4,7 @@ import (
 	"fmt"
 	arraysandhashing "neetcode/arraysAndHashing"
 	dynamicprogramming1d "neetcode/dynamicProgramming1d"
+	twopointers "neetcode/twoPointers"
 	"os"
 	"reflect"
 	"strconv"
@@ -74,6 +75,7 @@ func main() {
 	args := os.Args[2:]
 
 	functions := map[string]FunctionWrapper{
+		"15":  {twopointers.ThreeSum, []reflect.Type{reflect.TypeOf([]int{})}},
 		"70":  {dynamicprogramming1d.ClimbStairs, []reflect.Type{reflect.TypeOf(0)}},
 		"198": {dynamicprogramming1d.Rob, []reflect.Type{reflect.TypeOf([]int{})}},
 		"217": {arraysandhashing.ContainsDuplicate, []reflect.Type{reflect.TypeOf([]int{})}},
