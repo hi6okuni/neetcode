@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	arraysandhashing "neetcode/arraysAndHashing"
+	"neetcode/binarysearch"
 	dynamicprogramming1d "neetcode/dynamicProgramming1d"
 	twopointers "neetcode/twoPointers"
 	"os"
@@ -77,6 +78,7 @@ func main() {
 	functions := map[string]FunctionWrapper{
 		"15":  {twopointers.ThreeSum, []reflect.Type{reflect.TypeOf([]int{})}},
 		"70":  {dynamicprogramming1d.ClimbStairs, []reflect.Type{reflect.TypeOf(0)}},
+		"153": {binarysearch.FindMin, []reflect.Type{reflect.TypeOf([]int{})}},
 		"198": {dynamicprogramming1d.Rob, []reflect.Type{reflect.TypeOf([]int{})}},
 		"217": {arraysandhashing.ContainsDuplicate, []reflect.Type{reflect.TypeOf([]int{})}},
 		"238": {arraysandhashing.ProductExceptSelf, []reflect.Type{reflect.TypeOf([]int{})}},
