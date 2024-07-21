@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	arraysandhashing "neetcode/arraysAndHashing"
+	"neetcode/arraysandhashing"
 	"neetcode/binarysearch"
-	dynamicprogramming1d "neetcode/dynamicProgramming1d"
-	twopointers "neetcode/twoPointers"
+	"neetcode/dynamicprogramming1d"
+	"neetcode/twopointers"
 	"os"
 	"reflect"
 	"strconv"
