@@ -76,8 +76,10 @@ func main() {
 	args := os.Args[2:]
 
 	functions := map[string]FunctionWrapper{
+		"11":  {twopointers.MaxArea, []reflect.Type{reflect.TypeOf([]int{})}},
 		"15":  {twopointers.ThreeSum, []reflect.Type{reflect.TypeOf([]int{})}},
 		"70":  {dynamicprogramming1d.ClimbStairs, []reflect.Type{reflect.TypeOf(0)}},
+		"128": {arraysandhashing.LongestConsecutive, []reflect.Type{reflect.TypeOf([]int{})}},
 		"153": {binarysearch.FindMin, []reflect.Type{reflect.TypeOf([]int{})}},
 		"198": {dynamicprogramming1d.Rob, []reflect.Type{reflect.TypeOf([]int{})}},
 		"217": {arraysandhashing.ContainsDuplicate, []reflect.Type{reflect.TypeOf([]int{})}},
