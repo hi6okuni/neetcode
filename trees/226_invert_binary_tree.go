@@ -28,10 +28,18 @@ type TreeNode struct {
 
 // DFS
 // func invertTree(root *TreeNode) *TreeNode {
-// 	if root != nil {
-// 		root.Left, root.Right = invertTree(root.Right), invertTree(root.Left)
-// 	}
-// 	return root
+// 	if root == nil {
+//         return nil
+//     }
+
+//     // 左右の子ツリーを一時変数に保存
+//     leftSubtree := root.Left
+//     rightSubtree := root.Right
+
+//     root.Left = invertTree(rightSubtree)
+//     root.Right = invertTree(leftSubtree)
+
+//     return root
 // }
 
 // BFS
