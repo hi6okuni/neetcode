@@ -1,4 +1,4 @@
-package linedList
+package linkedList
 
 import (
 	"reflect"
